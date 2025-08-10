@@ -3,6 +3,7 @@
 A modern, responsive educational platform built with HTML, CSS, and vanilla JavaScript that replicates a Figma design prototype with enhanced features and creative improvements.
 
 **Name:** Mainak Chanda 
+
 **Date:** 2025-08-09  
 **Live:** https://your-deploy-link  
 **Repo:** https://github.com/yourusername/undo-assignment
