@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>EduKids Learning Platform - Course Browse</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet"/>
+<link href="css/styles.css" rel="stylesheet"/>
+</head>
+<body>
+<!-- Header -->
+<header class="header" id="header">
+<div class="container">
+<div class="header-content">
+<div class="flex items-center gap-6">
+<div class="logo">EduKids</div>
+<nav class="nav-menu">
+<a class="course-link" href="#courses">Browse Courses</a>
+<a class="nav-link" href="#teachers">Teachers</a>
+<a class="nav-link" href="#categories">Categories</a>
+<a class="nav-link" href="#webinars">Webinars</a>
+</nav>
+</div>
+<div class="auth-buttons">
+<button class="btn-login" id="loginBtn">Login</button>
+<button class="btn-register" id="registerBtn">Register for free</button>
+<button class="mobile-menu-btn" id="mobileMenuBtn">
+<div class="hamburger">
+<span></span>
+<span></span>
+<span></span>
+</div>
+</button>
+</div>
+</div>
+<div class="mobile-menu" id="mobileMenu">
+<nav>
+<a class="nav-link" href="#courses">Browse Courses</a>
+<a class="nav-link" href="#teachers">Teachers</a>
+<a class="nav-link" href="#categories">Categories</a>
+<a class="nav-link" href="#webinars">Webinars</a>
+</nav>
+</div>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="hero" id="hero">
+<div class="hero-images">
+<img alt="Student illustration" class="hero-img-left" src="../assets/images/img_ellipse_811.png"/>
+<img alt="Student illustration" class="hero-img-right" src="../assets/images/img_ellipse_810.png"/>
+<img alt="Student studying" class="hero-img-center" src="../assets/images/img_un_etudiant_sou.png"/>
+<img alt="Learning banner" class="hero-img-main" src="../assets/images/img_lead_learn_succeed_apply_now.png"/>
+</div>
+<div class="container">
+<div class="hero-content">
+<div class="hero-stats">
+<div class="stat-card">
+<div>
+<div class="stat-number">500+</div>
+<div class="stat-label">Courses</div>
+</div>
+</div>
+<div class="stat-card">
+<img alt="Happy students" height="44" src="../assets/images/img_happy_life_1.png" width="44"/>
+<div>
+<div class="stat-number">10k+</div>
+<div class="stat-label">Happy kids</div>
+</div>
+</div>
+<div class="stat-card">
+<img alt="Rating" height="40" src="../assets/images/img_hand_1.png" width="40"/>
+<div>
+<div class="stat-number">4.9</div>
+<div class="stat-label">Rating</div>
+</div>
+</div>
+</div>
+<h1 class="hero-title">
+                    Learn a New Skill<br/>
+<span class="highlight">Everyday, Anytime, and Anywhere.</span>
+</h1>
+<div class="search-container">
+<img alt="Search" height="24" src="../assets/images/img_search.svg" width="24"/>
+<input class="search-input" id="searchInput" placeholder="What do you want to learn today?" type="text"/>
+<button class="search-btn" id="searchBtn">Search</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Filter Bar -->
+<section class="filter-bar" id="filterBar">
+<div class="container">
+<div class="filter-controls">
+<div class="filter-group">
+<select class="filter-select" id="ageFilter">
+<option value="">All Ages</option>
+<option value="1-5">1-5 Years</option>
+<option value="6-10">6-10 Years</option>
+<option value="11-15">11-15 Years</option>
+<option value="16-18">16-18 Years</option>
+</select>
+</div>
+<div class="filter-group">
+<select class="filter-select" id="categoryFilter">
+<option value="">All Categories</option>
+<option value="coding">Coding</option>
+<option value="english">English</option>
+<option value="chess">Chess</option>
+<option value="public-speaking">Public Speaking</option>
+<option value="app-building">App Building</option>
+</select>
+</div>
+<div class="filter-group">
+<select class="filter-select" id="levelFilter">
+<option value="">All Levels</option>
+<option value="beginner">Beginner</option>
+<option value="intermediate">Intermediate</option>
+<option value="advanced">Advanced</option>
+</select>
+</div>
+<div class="filter-group">
+<select class="filter-select" id="priceFilter">
+<option value="">All Prices</option>
+<option value="0-100">₹0 - ₹100</option>
+<option value="100-300">₹100 - ₹300</option>
+<option value="300-500">₹300 - ₹500</option>
+<option value="500+">₹500+</option>
+</select>
+</div>
+<div class="view-toggle">
+<button class="view-btn active" data-view="grid" id="gridViewBtn">
+<svg fill="currentColor" height="16" viewbox="0 0 16 16" width="16">
+<rect height="5" rx="1" width="5" x="2" y="2"></rect>
+<rect height="5" rx="1" width="5" x="9" y="2"></rect>
+<rect height="5" rx="1" width="5" x="2" y="9"></rect>
+<rect height="5" rx="1" width="5" x="9" y="9"></rect>
+</svg>
+</button>
+<button class="view-btn" data-view="list" id="listViewBtn">
+<svg fill="currentColor" height="16" viewbox="0 0 16 16" width="16">
+<rect height="2" rx="1" width="12" x="2" y="3"></rect>
+<rect height="2" rx="1" width="12" x="2" y="7"></rect>
+<rect height="2" rx="1" width="12" x="2" y="11"></rect>
+</svg>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Age Selection Section -->
+<section class="age-section" id="ageSection">
+<div class="container">
+<div class="section-header">
+<h2 class="age-title">How Old Are You? 🎯</h2>
+<p class="age-subtitle">Pick your age and find the perfect courses just for you! ✨</p>
+</div>
+<div class="age-grid" id="ageGrid">
+<!-- Age cards will be populated by JavaScript -->
+</div>
+</div>
+</section>
+<!-- New Launches Section -->
+<section class="course-section" id="courses">
+<div class="container">
+<div class="section-header">
+<h2 class="section-title">New Launches ⭐</h2>
+<p class="section-subtitle">Our most loved courses that kids absolutely adore!</p>
+</div>
+<div class="course-grid" id="newCoursesGrid">
+<!-- Course cards will be populated by JavaScript -->
+</div>
+</div>
+</section>
+<!-- Featured Courses Section -->
+<section class="course-section">
+<div class="container">
+<div class="section-header">
+<h2 class="section-title">Featured Courses ⭐</h2>
+<p class="section-subtitle">Our most popular courses with amazing reviews!</p>
+</div>
+<div class="course-grid" id="featuredCoursesGrid">
+<!-- Course cards will be populated by JavaScript -->
+</div>
+</div>
+</section>
+<!-- Teachers Section -->
+<section class="teachers-section" id="teachers">
+<div class="container">
+<div class="section-header">
+<h2 class="section-title">Learn from Top Teachers</h2>
+<p class="section-subtitle">Expert instructors who make learning fun and engaging for every child</p>
+</div>
+<div class="teachers-grid" id="teachersGrid">
+<!-- Teacher cards will be populated by JavaScript -->
+</div>
+<!-- Teacher courses section -->
+<div class="course-grid" id="teacherCoursesGrid">
+<!-- Teacher course cards will be populated by JavaScript -->
+</div>
+</div>
+</section>
+<!-- Categories Section -->
+<section class="categories-section" id="categories">
+<div class="container">
+<div class="section-header">
+<h2 class="section-title">Popular Categories</h2>
+<p class="section-subtitle">Pick what you love most! These categories have everything you need to learn something awesome ✨</p>
+</div>
+<div class="categories-grid" id="categoriesGrid">
+<!-- Category cards will be populated by JavaScript -->
+</div>
+<!-- Category courses -->
+<div class="course-grid" id="categoryCoursesGrid">
+<!-- Category course cards will be populated by JavaScript -->
+</div>
+</div>
+</section>
+<!-- Webinar Section -->
+<section class="webinar-section" id="webinars">
+<div class="container">
+<div class="webinar-header">
+<div class="webinar-title">
+<div class="webinar-line"></div>
+<span>Webinar starting within</span>
+<span class="webinar-highlight">24 hrs</span>
+<div class="webinar-line"></div>
+</div>
+</div>
+<div class="course-grid" id="webinarCoursesGrid">
+<!-- Webinar course cards will be populated by JavaScript -->
+</div>
+</div>
+</section>
+<!-- Time Filter Section -->
+<section class="time-filter-section">
+<div class="container">
+<div class="section-header">
+<h2 class="section-title">Filter with Time</h2>
+<p class="section-subtitle">Choose the perfect time that fits your child's schedule</p>
+</div>
+<div class="time-options" id="timeOptions">
+<!-- Time option cards will be populated by JavaScript -->
+</div>
+<div class="course-horizontal" id="timeFilteredCourses">
+<!-- Horizontal course cards will be populated by JavaScript -->
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="footer">
+<div class="footer-content">
+<div class="footer-logo">EduKids</div>
+<p class="footer-text">Empowering young minds through innovative online education</p>
+<div class="footer-links">
+<a class="footer-link" href="#">About Us</a>
+<a class="footer-link" href="#">Contact</a>
+<a class="footer-link" href="#">Privacy Policy</a>
+<a class="footer-link" href="#">Terms of Service</a>
+<a class="footer-link" href="#">Help</a>
+</div>
+</div>
+</footer>
+
+<script src="js/app.js"></script></body>
+</html>
