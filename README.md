@@ -151,11 +151,10 @@ EduKidsLearningPlatform.html
 - [x] **Clean Code**: Semantic HTML5, organized CSS, modular JavaScript
 - [x] **Documentation**: Comprehensive README with enhancements detailed
 
-## 🚀 Live Demo
-
-The application is fully functional with all assignment requirements met and enhanced with modern web development best practices, creative animations, and superior user experience design.
 
 ---
+
+*Built with passion for education and modern web standards*✨
 
 ### 1️⃣ Add **How To Run** section
 
@@ -169,7 +168,7 @@ The application is fully functional with all assignment requirements met and enh
 
 2. Open `index.html` in your browser.
 
+
 ---
 
-*Built with passion for education and modern web standards*✨
 
