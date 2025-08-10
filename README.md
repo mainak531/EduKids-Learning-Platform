@@ -4,7 +4,7 @@ A modern, responsive educational platform built with HTML, CSS, and vanilla Java
 
 **Name:** Mainak Chanda 
 - **Date:** 2025-08-09  
-- **Live:** https://your-deploy-link  
+- **Live:**https://edu-kids-learning-platform.vercel.app
 - **Repo:** https://github.com/yourusername/undo-assignment
 
 ## 🎯 Assignment Requirements Met
