@@ -51,12 +51,13 @@ A modern, responsive educational platform built with HTML, CSS, and vanilla Java
 
 ### ✅ Clean & Maintainable Code
 
-#### 📁 Code Organization
+####  📦 Tech Stack
 ```
-EduKidsLearningPlatform.html
-├── HTML Structure (Semantic HTML5)
-├── CSS Styling (Component-based)
-└── JavaScript Logic (Modular ES6+)
+- HTML5 (Semantic Structure)
+- CSS3 (Flexbox, Grid, Animations)
+- Vanilla JavaScript (ES6+)
+- No external frameworks or libraries
+
 ```
 
 #### 🛠️ Technical Features
