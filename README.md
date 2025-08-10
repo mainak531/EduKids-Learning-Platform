@@ -157,13 +157,6 @@ The application is fully functional with all assignment requirements met and enh
 
 ---
 
-*Built with passion for education and modern web standards* ✨
-
-This README is already looking polished and professional —
-but for your teacher, I’d suggest **three quick upgrades** so it looks 100% aligned with your GitHub Pages / Netlify / Vercel deployment:
-
----
-
 ### 1️⃣ Add **How To Run** section
 
 
@@ -175,4 +168,6 @@ but for your teacher, I’d suggest **three quick upgrades** so it looks 100% al
 ````
 
 2. Open `index.html` in your browser.
+
+*Built with passion for education and modern web standards*✨
 
