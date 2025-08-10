@@ -169,5 +169,7 @@ The application is fully functional with all assignment requirements met and enh
 
 2. Open `index.html` in your browser.
 
+---
+
 *Built with passion for education and modern web standards*✨
 
